@@ -12,9 +12,9 @@ namespace Tets
     //Program Function      : To retrieved PLC data by using Modbus/TCP protocol
     //Program Origin        : Originated from windows WPF modbus 1st version, same author
     //Disclaimer            : Free to share but please give credit to author. Thanks
-    //Contact me            : mysayasan@gmail.com/+6013-7799971, kalau ada job ke apa jgn segan2 contact
+    //Contact me            : mysayasan@gmail.com kalau ada job ke apa jgn segan2 contact
     //Language & Framework  : C#, .NET Core    
-    //Why Tets              : Typo from the word 'test' and let it be.. lantak lah    
+    //Why named Tets        : Typo from the word 'test' and let it be.. lantak lah    
 
     //Collection of observable Modbus client
     public class ModbusClientCollection : ObservableCollection<ModbusClient>

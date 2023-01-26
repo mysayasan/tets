@@ -10,11 +10,12 @@ namespace Tets
 {
     //Developed By          : Muhammad Adib aka mysayasan.github.io
     //Date Origin           : 2019-04-11
-    //Program Function      : To retrieved PLC data by using Modbus protocol
+    //Program Function      : To retrieved PLC data by using Modbus/TCP protocol
     //Program Origin        : Originated from windows WPF modbus 1st version, same author
     //Disclaimer            : Free to share but please give credit to author. Thanks
-    //Contact me            : mysayasan@gmail.com/+6013-7799971, kalau ada job ke apa jgn segan2 contact
-    //Language & Framework  : C#, .NET Core     
+    //Contact me            : mysayasan@gmail.com kalau ada job ke apa jgn segan2 contact
+    //Language & Framework  : C#, .NET Core    
+    //Why named Tets        : Typo from the word 'test' and let it be.. lantak lah       
     
     [Serializable()]
     public class ProtocolDataUnit
