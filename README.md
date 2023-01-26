@@ -92,6 +92,7 @@ TETS is a Modbus TCP client program that can spawn multiple instance to fetch re
 ### Built With
 
 * [![.Net][DotNet]][DotNet-url]
+* [![C#][C#]][C#-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -223,6 +224,8 @@ Project Link: [https://github.com/mysayasan/tets](https://github.com/mysayasan/t
 [product-screenshot]: images/screenshot.png
 [DotNet]: https://img.shields.io/badge/dotnet-000000?style=for-the-badge&logo=dotnet&logoColor=white
 [DotNet-url]: https://dotnet.microsoft.com/en-us/download
+[C#]: https://img.shields.io/badge/csharp-33A5FF?style=for-the-badge&logo=csharp&logoColor=white
+[C#-url]: https://learn.microsoft.com/en-us/dotnet/csharp/
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
