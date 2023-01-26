@@ -125,9 +125,10 @@ First, make sure you have setup your visual studio code environment with dotnet 
         <FunctionCode>{Please refer to modbus manual default = 3}</FunctionCode>
         <StartAddress>0</StartAddress>
         <DataLen>10</DataLen>
-        </PDU>
-        </ModbusClient>
-        ```
+    </PDU>
+   </ModbusClient>
+    
+   ```
 3. Run the program
    ```sh
    dotnet run
@@ -136,31 +137,6 @@ First, make sure you have setup your visual studio code environment with dotnet 
    ```sh
    dotnet publish -r linux-x64 --self-contained true
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/mysayasan/tets/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,20 +172,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - mysayasan@gmail.com.com
-
 Project Link: [https://github.com/mysayasan/tets](https://github.com/mysayasan/tets)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
