@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mysayasan/tets">
-    <img src="images/logo.png" alt="TETS" width="200" height="200">
+    <img src="images/logo.png" alt="TETS" width="500" height="500">
   </a>
 
 <h3 align="center">TETS : Another Modbus/TCP client</h3>
