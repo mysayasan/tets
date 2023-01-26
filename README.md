@@ -34,7 +34,7 @@
     <img src="https://www.canva.com/design/DAFYvv9PrYU/VD0p4AtHhlZ-d-d9rs-40w/view?utm_content=DAFYvv9PrYU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Tets another modbus/tcp client</h3>
+<h3 align="center">Tets : another modbus/tcp client</h3>
 
   <p align="center">
     An application to read modbus registers via tcp
