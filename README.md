@@ -83,7 +83,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-TETS is a Modbus TCP client program that can spawn multiple instance to fetch registers/coils from PLC/Devices with modbus server via TCP/IP. This is a simple program and to store log file, you can just use piping ex: <br /> <i>./Tets profile.xml | tee modbus.log</i>
+TETS is a Modbus TCP client program that can spawn multiple instance to fetch registers/coils from PLC/Devices with modbus server via TCP/IP. This is a simple program and to store log file, you can just use piping ex: <br /> <i>./Tets profile.xml | tee modbus.log</i><br /> <b>Please bear in mind, only ushort value can be retrieved from modbus server</b>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
