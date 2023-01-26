@@ -83,7 +83,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `mysayasan`, `tets`, `twitter_handle`, `mysayasan`, `gmail.com`, `mysayasan`, `Tets another modbus/tcp client`, `An application to read modbus registers via tcp`
+TETS is a Modbus TCP client program that can spawn multiple instance to fetch registers/coils from PLC/Devices with modbus server via TCP/IP. This is a simple program and to store log file, you can just use piping ex: <i>./Tets profile.xml | tee modbus.log</i>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
