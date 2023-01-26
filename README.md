@@ -102,8 +102,7 @@ TETS is a Modbus TCP client program that can spawn multiple instance to fetch re
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+First, make sure you have setup your visual studio code environment with dotnet c#. Refer <a href="https://code.visualstudio.com/docs/languages/dotnet">here</a> if you need guide on how to setup the environement.
 
 ### Prerequisites
 
