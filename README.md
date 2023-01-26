@@ -126,7 +126,7 @@ First, make sure you have setup your visual studio code environment with dotnet 
       <StartAddress>0</StartAddress>
       <DataLen>10</DataLen>
     </PDU>
-  </ModbusClient>
+    </ModbusClient>
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
