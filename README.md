@@ -128,6 +128,14 @@ First, make sure you have setup your visual studio code environment with dotnet 
         </PDU>
         </ModbusClient>
         ```
+3. Run the program
+   ```sh
+   dotnet run
+   ```
+4. Publish the program
+   ```sh
+   dotnet publish -r linux-x64 --self-contained true
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
