@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfModbusClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModbusClient>
+    <ID>1</ID>
+    <IP>194.1.141.41</IP>
+    <Port>502</Port>
+    <Timeout>10</Timeout>
+    <Refresh>1</Refresh>
+    <RetryTimes>3</RetryTimes>
+    <PersistantConnection>true</PersistantConnection>
+    <ReconnectDelay>5</ReconnectDelay>
+    <PDU>
+      <FunctionCode>3</FunctionCode>
+      <StartAddress>0</StartAddress>
+      <DataLen>10</DataLen>
+    </PDU>
+  </ModbusClient>
+  <ModbusClient>
+    <ID>2</ID>
+    <IP>194.1.141.41</IP>
+    <Port>502</Port>
+    <Timeout>10</Timeout>
+    <Refresh>1</Refresh>
+    <RetryTimes>3</RetryTimes>
+    <PersistantConnection>true</PersistantConnection>
+    <ReconnectDelay>5</ReconnectDelay>
+    <PDU>
+      <FunctionCode>3</FunctionCode>
+      <StartAddress>0</StartAddress>
+      <DataLen>20</DataLen>
+    </PDU>
+  </ModbusClient>
+</ArrayOfModbusClient>
