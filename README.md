@@ -104,28 +104,29 @@ TETS is a Modbus TCP client program that can spawn multiple instance to fetch re
 
 First, make sure you have setup your visual studio code environment with dotnet c#. Refer <a href="https://code.visualstudio.com/docs/languages/dotnet">here</a> if you need guide on how to setup the environement.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/mysayasan/tets.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+2. Configure your modbus instance in `config.xml`
+   ```xml
+   <ModbusClient>
+    <ID>1</ID>
+    <IP>{ServerIP}</IP>
+    <Port>{ServerPort}</Port>
+    <Timeout>10</Timeout>
+    <Refresh>{Refresh Rate in seconds}</Refresh>
+    <RetryTimes>3</RetryTimes>
+    <PersistantConnection>true</PersistantConnection>
+    <ReconnectDelay>5</ReconnectDelay>
+    <PDU>
+      <FunctionCode>{Please refer to modbus manual default = 3}</FunctionCode>
+      <StartAddress>0</StartAddress>
+      <DataLen>10</DataLen>
+    </PDU>
+  </ModbusClient>
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
