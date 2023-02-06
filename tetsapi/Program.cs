@@ -22,4 +22,16 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+var wsOptions = new WebSocketOptions()  
+{  
+   KeepAliveInterval = TimeSpan.FromSeconds(120),  
+   ReceiveBufferSize = 1024 * 1
+}; 
+app.UseWebSockets();
+
+app.UseDefaultFiles(new DefaultFilesOptions { DefaultFileNames = new 
+     List<string> { "index.html" } });
+
+app.UseStaticFiles();
+
 app.Run();

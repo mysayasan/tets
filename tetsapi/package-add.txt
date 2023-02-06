@@ -1,2 +1,3 @@
 dotnet add package Microsoft.AspNetCore --version 2.2.0
+dotnet add package RabbitMQ.Client
 dotnet add package Microsoft.EntityFrameworkCore.InMemory

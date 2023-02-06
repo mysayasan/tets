@@ -5,7 +5,7 @@ namespace tetsapi.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 
-public class ValuesController : ControllerBase
+public class ValController : ControllerBase
 
 {
 
