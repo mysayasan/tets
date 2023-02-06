@@ -33,6 +33,27 @@ public class Consumer
             handler(this, new ReceiveEventArgs() { id = id, data = response });
     }
 
+    public void Send(string message)
+    {
+        var factory = new ConnectionFactory { Uri = new Uri("amqp://admin:maam2013@192.168.1.58:5672") };
+        _connection = factory.CreateConnection();
+        _channel = _connection.CreateModel();
+
+        _channel.QueueDeclare(queue: "hello2",
+                             durable: false,
+                             exclusive: false,
+                             autoDelete: false,
+                             arguments: null);
+        var body = Encoding.UTF8.GetBytes(message);
+
+        _channel.BasicPublish(exchange: string.Empty,
+                     routingKey: "hello2",
+                     basicProperties: null,
+                     body: body);
+        Console.WriteLine($" [x] Sent {message}");
+
+    }
+
     public void Run()
     {
         var factory = new ConnectionFactory { Uri = new Uri("amqp://admin:maam2013@192.168.1.58:5672") };

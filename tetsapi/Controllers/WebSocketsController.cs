@@ -83,7 +83,14 @@ public class WebSocketsController : ControllerBase
             _logger.Log(LogLevel.Information, "Message sent to Client");
 
             result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-            _logger.Log(LogLevel.Information, "Message received from Client");
+            var rcvmsg = buffer.TakeWhile((v, index) => buffer.Skip(index).Any(w => w != 0x00)).ToArray();
+            string rcvStr = Encoding.UTF8.GetString(rcvmsg);
+            if (rcvStr == "1") {
+                consumer.Send("on");
+            } else {
+                consumer.Send("off");
+            }
+            _logger.Log(LogLevel.Information, $"Message received from Client >> {rcvStr}");
 
         }
         await webSocket.CloseAsync(result.CloseStatus.Value, result.CloseStatusDescription, CancellationToken.None);

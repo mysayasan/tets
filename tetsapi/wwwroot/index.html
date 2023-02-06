@@ -13,10 +13,20 @@
             // Let us open a web socket
             var ws = new WebSocket("ws://localhost:5094/ws");
 
+            const checkbox = document.getElementById('switch1')
+
+            checkbox.addEventListener('change', (event) => {
+               if (event.currentTarget.checked) {
+                  ws.send("1");
+               } else {
+                  ws.send("0");
+               }
+            })
+
             ws.onopen = function () {
 
                // Web Socket is connected, send data using send()
-               ws.send("Im sending you a message!");
+               // ws.send("Im sending you a message!");
                // alert("Message is sent...");
             };
 
@@ -60,7 +70,7 @@
    <section class="centered">
       <h2>Toggle Signboard Switch</h2>
       <label class="switch">
-         <input id="switch1" type="checkbox" readonly>
+         <input id="switch1" type="checkbox">
          <span class="slider round"></span>
       </label>
    </section>
