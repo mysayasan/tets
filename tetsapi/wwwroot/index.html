@@ -26,7 +26,7 @@
             ws.onopen = function () {
 
                // Web Socket is connected, send data using send()
-               // ws.send("Im sending you a message!");
+               ws.send("9");
                // alert("Message is sent...");
             };
 
@@ -37,8 +37,10 @@
                if (received_msg) {
                   try {
                      ewedevice = JSON.parse(received_msg);
-                     if (ewedevice.params.switch !== undefined) {
-                        document.getElementById("switch1").checked = ewedevice.params.switch === "on";
+                     if (ewedevice.params.switches !== undefined) {
+                        var switches = ewedevice.params.switches;
+                        console.log(switches);
+                        document.getElementById("switch1").checked = switches[0].switch === "on";
                      }
                   } catch (e) {
                      console.log(e);
@@ -68,7 +70,7 @@
       <a href="javascript:WebSocketTest()">Run WebSocket</a>
    </div> -->
    <section class="centered">
-      <h2>Toggle Signboard Switch</h2>
+      <h2>Toggle Light Switch</h2>
       <label class="switch">
          <input id="switch1" type="checkbox">
          <span class="slider round"></span>

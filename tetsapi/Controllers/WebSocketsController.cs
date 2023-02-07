@@ -40,7 +40,7 @@ public class WebSocketsController : ControllerBase
 
     private async Task Echo(WebSocket webSocket)
     {
-        var buffer = new byte[1024 * 1];
+        var buffer = new byte[1024 * 4];
         var result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
         _logger.Log(LogLevel.Information, $"Message received from Client >>");
         Consumer consumer = new Consumer() { ID = 1 };
@@ -87,8 +87,12 @@ public class WebSocketsController : ControllerBase
             string rcvStr = Encoding.UTF8.GetString(rcvmsg);
             if (rcvStr == "1") {
                 consumer.Send("on");
-            } else {
-                consumer.Send("off");
+            }
+            else if (rcvStr == "9") {
+                consumer.Send("oi");
+            }
+            else {
+                consumer.Send("of");
             }
             _logger.Log(LogLevel.Information, $"Message received from Client >> {rcvStr}");
 

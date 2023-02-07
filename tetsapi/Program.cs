@@ -25,7 +25,7 @@ app.MapControllers();
 var wsOptions = new WebSocketOptions()  
 {  
    KeepAliveInterval = TimeSpan.FromSeconds(120),  
-   ReceiveBufferSize = 1024 * 1
+   ReceiveBufferSize = 1024 * 4
 }; 
 app.UseWebSockets();
 
