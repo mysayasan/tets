@@ -74,7 +74,7 @@ namespace Tets
             {
                 case ConnStatus.DISCONNECTED:
                     {
-                        Thread oldthread = threads.FirstOrDefault(i => i.Name == client.ID.ToString());
+                        Thread? oldthread = threads.FirstOrDefault(i => i.Name == client.ID.ToString());
                         if (oldthread != null)
                         {
                             threads.Remove(oldthread);
