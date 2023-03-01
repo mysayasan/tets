@@ -111,12 +111,12 @@ namespace Tets
             }
         }
 
-        private static void work_OnResponseEvent(object sender, ModbusClient.ModbusResponseEventArgs e)
+        private static void work_OnResponseEvent(object? sender, ModbusClient.ModbusResponseEventArgs e)
         {
             Console.WriteLine(string.Format("[{0}] {1} >> {2}", e.id, e.ip, e.data));
         }
 
-        private static void work_OnInfoEvent(object sender, ModbusClient.ModbusNotificationEventArgs e)
+        private static void work_OnInfoEvent(object? sender, ModbusClient.ModbusNotificationEventArgs e)
         {
             Console.WriteLine(string.Format("[{0}] {1} >> {2}", e.id, e.ip, e.data));
         }
